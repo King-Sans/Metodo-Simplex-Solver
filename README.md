@@ -8,16 +8,14 @@ Aplicación de consola en Java para resolver problemas de programación lineal c
 .
 ├── README.md
 └── src/
-    └── main/
-        └── java/
-            ├── ClienteSimplex.java
-            ├── EntradaSimplex.java
-            ├── PresentacionSimplex.java
-            ├── Simplex.java
-            └── SimplexSolver.java
+    ├── ClienteSimplex.java
+    ├── EntradaSimplex.java
+    ├── PresentacionSimplex.java
+    ├── Simplex.java
+    └── SimplexSolver.java
 ```
 
-`Simplex.java` contiene el método `main` y es el punto de entrada. En un proyecto Java, `main` pertenece a una clase fuente dentro de `src/main/java`; no debe moverse fuera de `src`.
+`Simplex.java` contiene el método `main` y es el punto de entrada de la aplicación.
 
 - `ClienteSimplex`: coordina la entrada del problema y la resolución.
 - `EntradaSimplex`: lee y valida los datos ingresados.
@@ -35,7 +33,7 @@ Desde la carpeta raíz del proyecto:
 
 ```sh
 mkdir -p out
-javac -d out src/main/java/*.java
+javac -d out src/*.java
 java -cp out Simplex
 ```
 
